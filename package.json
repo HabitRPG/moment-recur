@@ -24,7 +24,6 @@
     "karma-jasmine": "~0.3.4"
   },
   "scripts": {
-    "test": "gulp test",
-    "preinstall": "npm install bower gulp"
+    "test": "gulp test"
   }
 }
