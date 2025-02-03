@@ -15,6 +15,11 @@
       throw Error("Can't find moment");
     }
 
+    if (moment.__esModule && moment.default) {
+        // Handle issue when using vite.
+        moment = moment.default;
+    }
+
     // Interval object for creating and matching interval-based rules
     var Interval = (function() {
         function createInterval(units, measure) {
